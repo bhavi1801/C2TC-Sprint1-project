@@ -13,11 +13,16 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     private String name;
-    private String department;
-    private int year;
+    private String location;
+    private String University;
+    private String principalName;
+    private int establishedYear;
+    private int studentCount;
+    private String accredation;
+
 
     public Student() {}
 
