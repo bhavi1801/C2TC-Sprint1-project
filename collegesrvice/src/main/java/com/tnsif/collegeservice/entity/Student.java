@@ -26,10 +26,13 @@ public class Student {
 
     public Student() {}
 
-    public Student(String name, String department, int year) {
+    public Student(String name, String location, int establishedyear, int StudentCount, String university, 
+                  String principalName, String accreditation) {
         this.name = name;
         this.department = department;
         this.year = year;
+
+
     }
 
     // Getters & Setters
