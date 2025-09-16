@@ -24,30 +24,39 @@ public class Student {
     private String accredation;
 
 
-    public Student() {}
-
-    public Student(String name, String location, int establishedyear, int StudentCount, String university, 
-                  String principalName, String accreditation) {
-        this.name = name;
-        this.department = department;
-        this.year = year;
+    
 
 
     }
 
     // Getters & Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
-    public String getDepartment() { return department; }
-    public void setDepartment(String department) { this.department = department; }
+    public String getLocation() { return location; }
+    public void setLocation(String location) { this.location = location; }
 
-    public int getYear() { return year; }
-    public void setYear(int year) { this.year = year; }
+    public int EstablishedYear() { return establishedYear; }
+    public void setEstablishedYear(int establishedyear) { this.establishedYear = establishedYear; }
+
+   public String setUniversity() { return university; }
+    public void setUniversity(String university) { this.university= university; 
 }
 
+    public String principalName() { return principalName; }
+    public void setPrincipalName(String principalName ) { this. principalName= principalName; 
+}
+    public int StudentCount() { return studentCount; }
+    public void setStudentCount(int studentCount) { this. studentCount = studentCount; }
+
+    public String getAccreditation(){
+        return accreditation;}
+     public void setAccreditation(String Accreditation) { this.accreditation= accreditation; 
+
+}
+}
 
 
