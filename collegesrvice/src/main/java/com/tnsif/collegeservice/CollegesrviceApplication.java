@@ -1,4 +1,4 @@
-package com.tnsif.collegeservice;
+package com.tnsif.collegesrvice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
