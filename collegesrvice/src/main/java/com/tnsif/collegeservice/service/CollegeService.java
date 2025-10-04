@@ -1,7 +1,7 @@
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.tnsif.college.entity.CollegeEntity;
-import com.tnsif.college.repository.CollegeRepository;
+import com.tnsif.collegesrvice.entity.CollegeEntity;
+import com.tnsif.collegesrvice.repository.CollegeRepository;
 
 @Service
 public class CollegeService {
