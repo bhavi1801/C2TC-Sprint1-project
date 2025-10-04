@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.tnsif.college.entity.CollegeEntity;
-import com.tnsif.college.service.CollegeService;
+import com.tnsif.collegesrvice.entity.CollegeEntity;
+import com.tnsif.collegesrvice.service.CollegeService;
 
 @RestController
 @RequestMapping("/colleges")
