@@ -25,6 +25,12 @@ public class StudentController {
     @PostMapping
     public Student createStudent(@RequestBody Student student) {
         return service.addStudent(student);
+        @DeleteMapping("/{id}")
+    public String deleteCollege(@PathVariable("id") int id) {
+        StudentService.deleteStudent(id);
+        return "Student with ID " + id + " deleted successfully!";
     }
 }
+
+    
 
