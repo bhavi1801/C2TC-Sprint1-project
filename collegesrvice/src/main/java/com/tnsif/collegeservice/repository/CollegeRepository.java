@@ -1,11 +1,8 @@
-package com.tnsif.collegeservice.repository;
+package com.tnsif.college.repository;
 
-
-
-
-import com.tnsif.collegeservice.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.tnsif.college.entity.CollegeEntity;
 
-public interface StudentRepository extends JpaRepository<Student, Integer> {
+public interface CollegeRepository extends JpaRepository<CollegeEntity, Integer> {
+    
 }
-
