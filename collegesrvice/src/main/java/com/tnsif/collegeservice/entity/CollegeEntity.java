@@ -1,7 +1,4 @@
-package com.tnsif.collegeservice.entity;
-
-
-
+package com.tnsif.college.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Student {
+public class CollegeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,46 +14,67 @@ public class Student {
 
     private String name;
     private String location;
-    private String University;
+    private String university;
     private String principalName;
     private int establishedYear;
     private int studentCount;
-    private String accredation;
+    private String accreditation;
 
+    // --- Getters & Setters ---
 
-    
-
-
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 
-    // Getters & Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public String getLocation() {
+        return location;
+    }
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
-    public String getLocation() { return location; }
-    public void setLocation(String location) { this.location = location; }
+    public String getUniversity() {
+        return university;
+    }
+    public void setUniversity(String university) {
+        this.university = university;
+    }
 
-    public int EstablishedYear() { return establishedYear; }
-    public void setEstablishedYear(int establishedyear) { this.establishedYear = establishedYear; }
+    public String getPrincipalName() {
+        return principalName;
+    }
+    public void setPrincipalName(String principalName) {
+        this.principalName = principalName;
+    }
 
-   public String setUniversity() { return university; }
-    public void setUniversity(String university) { this.university= university; 
+    public int getEstablishedYear() {
+        return establishedYear;
+    }
+    public void setEstablishedYear(int establishedYear) {
+        this.establishedYear = establishedYear;
+    }
+
+    public int getStudentCount() {
+        return studentCount;
+    }
+    public void setStudentCount(int studentCount) {
+        this.studentCount = studentCount;
+    }
+
+    public String getAccreditation() {
+        return accreditation;
+    }
+    public void setAccreditation(String accreditation) {
+        this.accreditation = accreditation;
+    }
 }
-
-    public String principalName() { return principalName; }
-    public void setPrincipalName(String principalName ) { this. principalName= principalName; 
-}
-    public int StudentCount() { return studentCount; }
-    public void setStudentCount(int studentCount) { this. studentCount = studentCount; }
-
-    public String getAccreditation(){
-        return accreditation;}
-     public void setAccreditation(String Accreditation) { this.accreditation= accreditation; 
-
-}
-}
-
-
