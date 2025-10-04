@@ -1,28 +1,35 @@
-package com.tnsif.collegeservice.service;
-
-
-
-
-import com.tnsif.collegeservice.entity.Student;
-import com.tnsif.collegeservice.repository.StudentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import com.tnsif.college.entity.CollegeEntity;
+import com.tnsif.college.repository.CollegeRepository;
 
 @Service
-public class StudentService {
-    private final StudentRepository repository;
+public class CollegeService {
 
-    public StudentService(StudentRepository repository) {
-        this.repository = repository;
+    @Autowired
+    private CollegeRepository collegeRepo;
+
+    public CollegeEntity saveCollege(CollegeEntity college) {
+        return collegeRepo.save(college);
     }
 
-    public List<Student> getAllStudents() {
-        return repository.findAll();
+    public CollegeEntity getCollegeById(int id) {
+        return collegeRepo.findById(id).orElse(null);
     }
 
-    public Student addStudent(Student student) {
-        return repository.save(student);
+    public void deleteCollege(int id) {
+        collegeRepo.deleteById(id);
+    }
+
+    public List<CollegeEntity> getColleges() {
+        return collegeRepo.findAll();
+    }
+
+    public CollegeEntity updateCollege(int id, CollegeEntity college) {
+        if (collegeRepo.existsById(id)) {
+            college.setId(id);
+            return collegeRepo.save(college);
+        }
+        return null;
     }
 }
-
